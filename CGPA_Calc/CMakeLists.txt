@@ -9,13 +9,10 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 
 add_library(course STATIC
     src/course.cpp
+    src/gpa_calc.cpp
     include/course.hpp
 )
 
-add_library(gpa_calc STATIC
-    src/gpa_calc.cpp
-    include/gpa_calc.hpp
-)
 
 add_executable(${PROJECT_NAME} src/main.cpp)
 

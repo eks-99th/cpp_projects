@@ -33,8 +33,8 @@ void validate_values(const std::string &_grade) {
     for (const string &grade : validGrades) {
       allGrades += grade;
     }
-    throw std::invalid_argument("Invalid Grade Value. Valid values are " +
-                                allGrades);
+    throw invalid_argument("Invalid Grade Value. Valid values are " +
+                           allGrades);
   }
 }
 }  // namespace

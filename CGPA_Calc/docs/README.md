@@ -13,7 +13,7 @@ For each course, allow the user to input:
 Grade Point Calculation:
 
 - Calculate the grade points for each course based on the grade earned.
-- Use a standard grade point system (e.g., A = 4.0, B = 3.0, etc.).
+- Use a standard grade point system (e.g., A = 10.0, B = 8.0, etc.).
 
 Individual Course Grades Display:
 
