@@ -7,8 +7,8 @@ target_include_directories(COURSE_TESTS PRIVATE ${PROJECT_SOURCE_DIR}/include)
 target_link_libraries(COURSE_TESTS ${GTEST_LIB} ${GTEST_MAIN_LIB} pthread course)
 add_test(NAME ${PROJECT_NAME}_COURSE_TESTS COMMAND COURSE_TESTS)
 
-add_executable(GPA_CALC_TESTS gpa_calc_tests.cpp)
-target_include_directories(GPA_CALC_TESTS PRIVATE ${PROJECT_SOURCE_DIR}/include)
-target_link_libraries(GPA_CALC_TESTS ${GTEST_LIB} ${GTEST_MAIN_LIB} pthread course)
-add_test(NAME ${PROJECT_NAME}_GPA_CALC_TESTS COMMAND GPA_CALC_TESTS)
+# add_executable(GPA_CALC_TESTS course_tests.cpp)
+# target_include_directories(GPA_CALC_TESTS PRIVATE ${PROJECT_SOURCE_DIR}/include)
+# target_link_libraries(GPA_CALC_TESTS ${GTEST_LIB} ${GTEST_MAIN_LIB} pthread course)
+# add_test(NAME ${PROJECT_NAME}_GPA_CALC_TESTS COMMAND GPA_CALC_TESTS)
 

@@ -13,16 +13,21 @@ const std::array<std::string, 5> validGrades = {"A", "B", "C", "D", "E"};
 namespace {
 void validate_values(const std::string &_grade);
 void validate_course_name(const string &_courseName) {
-  if (_courseName.empty() == true)
+  if (_courseName.empty() == true) {
     throw std::invalid_argument("Course name cannot be empty");
-  else if (_courseName.length() > MAX_COURSE_NAME_SZ) {
+    std::exit(EXIT_FAILURE);
+  } else if (_courseName.length() > MAX_COURSE_NAME_SZ) {
     throw std::invalid_argument("Course name cannot be empty");
+    std::exit(EXIT_FAILURE);
   }
 }
 
 void validade_grade(const std::string &_grade) {
-  if (_grade.empty() == true)
+  if (_grade.empty() == true) {
     throw std::invalid_argument("Grade cannot be empty");
+    std::exit(EXIT_FAILURE);
+  }
+
   validate_values(_grade);
 }
 
